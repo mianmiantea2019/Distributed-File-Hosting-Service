@@ -20,4 +20,5 @@ public class ImoocBilibiliApp {
     public static void main(String[] args){
         ApplicationContext app = SpringApplication.run(ImoocBilibiliApp.class, args);
     }
+
 }
