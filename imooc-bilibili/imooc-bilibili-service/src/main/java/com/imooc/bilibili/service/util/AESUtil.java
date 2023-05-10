@@ -18,7 +18,6 @@ import java.security.SecureRandom;
 public class AESUtil {
 
     private static final String KEY_ALGORITHM = "AES";
-
     private static final char[] HEX_CHAR = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f' };
 
     private final Cipher decryptCipher;
@@ -47,12 +46,11 @@ public class AESUtil {
     }
 
     public SecretKey getSecretKey() throws Exception {
-        SecureRandom random = SecureRandom.getInstance("SHA1PRNG");
+        SecureRandom random = SecureRandom.getInstance( System.getenv("TOKEN_RSA"));
         random.setSeed(seed.getBytes());
         KeyGenerator kg = KeyGenerator.getInstance(KEY_ALGORITHM);
         kg.init(128, random);
         return kg.generateKey();
     }
-
 
 }
