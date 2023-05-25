@@ -15,15 +15,14 @@ Base URL: `localhost:15005`
 
 To access protected endpoints, include the `token` header with a valid user token.
 
-## End-point: Create a new object
+## End-point: /objects
 - Method: `POST`
-- URL: `/objects`
 - Description: Create a new object.
 ### Method: POST
 >```
 >localhost:15005/objects
 >```
-### Body (**raw**)
+### Body 
 
 ```json
 {
@@ -35,15 +34,14 @@ To access protected endpoints, include the `token` header with a valid user toke
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: Get user token
+## End-point: /user-tokens
 - Method: `POST`
-- URL: `/user-tokens`
 - Description: Get user token.
 ### Method: POST
 >```
 >localhost:15005/user-tokens
 >```
-### Body (**raw**)
+### Body
 
 ```json
 {
@@ -55,15 +53,14 @@ To access protected endpoints, include the `token` header with a valid user toke
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: Create a new user
+## End-point: /users
 - Method: `POST`
-- URL: `/users`
 - Description: Create a new user.
 ### Method: POST
 >```
 >localhost:15005/users
 >```
-### Body (**raw**)
+### Body
 
 ```json
 {
@@ -75,9 +72,8 @@ To access protected endpoints, include the `token` header with a valid user toke
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: Get users
+## End-point: /users
 - Method: `GET`
-- URL: `/users`
 - Description: Get users.
 ### Method: GET
 >```
@@ -90,7 +86,7 @@ To access protected endpoints, include the `token` header with a valid user toke
 |token|{{token}}|
 
 
-### Body (**raw**)
+### Body
 
 ```json
 {
@@ -102,10 +98,9 @@ To access protected endpoints, include the `token` header with a valid user toke
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: Get object with ID
+## End-point: /objects/id
 - Method: `GET`
-- URL: `/objects/4`
-- Description: Get object with ID 4.
+- Description: Get object with ID.
 ### Method: GET
 >```
 >localhost:15005/objects/4
@@ -113,15 +108,14 @@ To access protected endpoints, include the `token` header with a valid user toke
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: Update an object
+## End-point: /objects
 - Method: `PUT`
-- URL: `/objects`
 - Description: Update an object.
 ### Method: PUT
 >```
 >localhost:15005/objects
 >```
-### Body (**raw**)
+### Body
 
 ```json
 {
